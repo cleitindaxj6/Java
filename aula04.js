@@ -1,8 +1,8 @@
 // Funçoes
-let x ="nada";
+let x ="olá";
 console.log(x)
 x = 8;
-y = "Pessego"
+y = "Melancia"
 
 imprimeTexto(y)
 
@@ -14,7 +14,7 @@ function imprimeTexto(texto){
 
 // 2: Chamar/executar a funçao
 imprimeTexto(x)
-imprimeTexto("Eu sou Legal")
+imprimeTexto("Olá Pra todo mundo")
 
 function soma(){
     return 25 +98
@@ -31,8 +31,8 @@ function nomeIdade(nome, idade){
     return `Meu nome é ${nome}, e minha idade é ${idade}`
 }
 // A ordem dos parametros é importante!!
-imprimeTexto(nomeIdade("Arvore", 122))
-imprimeTexto(nomeIdade(68, "Areia"))
+imprimeTexto(nomeIdade("Henrique", 17))
+imprimeTexto(nomeIdade(8, "Pedra"))
 
 imprimeTexto(multiplicacao())
 // Voce pode definir um paramentro inicial para a funçao
@@ -52,7 +52,7 @@ console.log(constanteSoma(2,4))
 //Arrow Fuction(Funçao abreviada, usada em resposta a uma açao)
 const apresentaArrow = nome => `Meu nome é ${nome}`;
 const somaArrow = (n1, n2) => n1 +n2;
-console.log(apresentaArrow("avatar"))
+console.log(apresentaArrow("Henrique"))
 console.log(somaArrow(12,98))
 
 const somaNumeroPequenos = (num1, num2) => {
