@@ -1,33 +1,35 @@
-//Alguns erros comuns
+// Erros comuns
 
-//const numero; 1 erro: Não declarar uma constante;
+// const numero; Primeiro Erro:(const nao declarada)
 
+const minhaVar= "oi" // Segundo Erro:(Nao declarar uma variavel e chamar-la no codigo)
+console.log(minhaVar) // exemplo: chamar minhavar
 
-const minhaVar ='oi' // 2 Erro: Não declarar uma variavel e chamar no codigo;
-console.log(minhaVar); // exemplo, chamar minhavar com V minusculo;
+console.error("Isso esta errado") // Declaraçao Erros:(Voce pode declara um erro com o console.error)
 
-console.error("Isso esta errado") // 3 "Erro": Voce pode declarar
+// Condicional abreviada if(){}
 
-// Condicional avrevida if(){}
-
-let idadeMinima = 18;
-let idadeCliete = 17;
-
-if(idadeCliente >= idadeMinha){
-    console.log("Cerveja")
-} else {
-    console.log("Nescau")
+let idadeMinima = 34;
+let idadeCliente = 18;
+if(idadeCliente >= idadeMinima){
+    console.log("Pode")
+}
+else{
+    console.log("nao vai poder")
 }
 
-console.log(idadeCliente >= idadeMinima ? "cerveja" : "suco")
-// modo ternario, utilizando a estrutura ________>=____?___:__
-// modo ternario, utilizando a estrutura ________>=____?___:__
-// modo ternario, utilizando a estrutura ________>=____?___:__
+// Valor tenario
+// Modo ternario, utilizado(______ >= ______ ? _____ : _____ )
+// Modo ternario, utilizado(______ <= ______ ? _____ : _____ )
+// Modo ternario, utilizado(______ == ______ ? _____ : _____ )
+console.log(idadeCliente >= idadeMinima ? "Pode" : "nao vai")
 
-//Template string
+// Template String
 
-const nome = "Carlos"
+const nome = "Carlos";
 const idade = 17;
-const cidadeNatal = "Foz do Iguaçu"
-
-const apresentacao = "Meu nome é" + nome +" + idade + 
+const cidadeNatal = "Foz Do iguaçu"
+const apresentaçao = "Meu nome é " + nome + ", minha idade é " + idade + ", e nasci em " + cidadeNatal;
+console.log(apresentaçao)
+const apresentaçao02 =`Meu nome é ${nome}, minha idade é ${idade}, minha cidade natal é ${cidadeNatal}`
+console.log(apresentaçao02)

@@ -1,64 +1,62 @@
-//,Var -> Criando uma variável
+// var = criando variavel
 
-// var altura = 5;
-// var comprimento = 8;
+//var altura = 10;
+//var largura = 5;
+//var area = altura * largura;
+//console.log(area);
 
-// var area = altura * comprimento;
-// console.log(area);
+// let = cria variavel(forma atualizada de criar variaveis)
 
-// let -> Cria uma variável ( forma mais atualizada de criar uma var)
-
-const altura =5;
-const comprimento = 8;
-const forma = "retangulo"
+const altura = 8
+const largura = 10
+const forma = "Retangulo";
 let area;
 
-if (forma === 'retangulo') {
-    area = altura * comprimento;
-} else if (forma === 'triangulo') {
-    area = (altura * comprimento) / 2;
-} else {
-    console.log("Deveria ser uma forma");
-    area = null; 
+if (forma === "Retangulo"){
+    area = altura * largura
 }
-
+else if(forma === "triangulo"){
+    area = (altura * largura) / 2;
+}
+else{
+    console.log("Deveria ser forma")
+}
 console.log(area);
 
-// const -> Utilizada para criar "variáveis" que são fixas, que não se altera 
-// Condições booleanas (Truly ou falsy)
+// const = Sem permance a mesma(varieveis fixas, ou seja, nao se alteram)
+// Condiçoes Booleanas(Truly or Falsy)
 // 0 = false
 // 1 = true
 
 const usuarioLogado = true;
 const contaPaga = false;
-
-console.log(0 == false); // True
-console.log(contaPaga == 0) // True
-console.log(contaPaga === 0); // False
-console.log("" == false); // True
-console.log(1 == true); // True
+console.log(0 == false); //true
+console.log(contaPaga == 0) //true
+console.log(contaPaga === 0) //false
+console.log("" == false) //true
+console.log(1 == true) //true
 
 // Nulo e indefinido
-// nulo -> Vazio ou nada 
+//Nulo = vazio ou nada (tem valor)
 
-let carlos;
-let guilherme = null;
-let numero = 3;
-let texto = "Eu gosto de programação <3 "
+let Guilherme;
+let Luiz = null;
+let numero = 24;
+let texto = "Não gosto de chuva"
 
-// Consultando os tipos de variáveis;
+//  consultando tipo de variaveis
 
-console.log(typeof carlos);
-console.log(typeof guilherme);
-console.log(typeof numero);
-console.log(typeof texto);
+console.log(typeof Guilherme)
+console.log(typeof Luiz)
+console.log(typeof numero)
+console.log(typeof texto)
 
-// Coversão de variável
+// conversao de variavel
 
-const numeroNumber = 390;
-const numeroString = "390"
+const numberNumero = 657;
+const stringNumero = "657"
 
-console.log(numeroNumber == numeroString); // compra apenas o valor
-console.log(numeroNumber === numeroString) // compara também o tipo
-console.log(numeroNumber + numeroString) // concatenção
-console.log(numeroNumber + Number (numeroString))
+console.log(numberNumero == stringNumero) // compara apenas o valor numerico
+console.log(numberNumero === stringNumero) // compara o tipo de variavel
+console.log(numberNumero + stringNumero) //concatenaçao
+console.log(numberNumero + Number(stringNumero)) // soma de numeros(string convertida em Number)
